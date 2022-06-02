@@ -15,7 +15,7 @@
 
   --clr-light:#F4F7FC;
   --clr-dark: #272626;
-  --clr-accent: #F65D5F; 
+  --clr-accent: #de36b2; 
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -48,7 +48,11 @@ body {
     font-size: var(--fs-body);
     line-height: 1.6;
     background-color: var(--clr-light);
-    background-image: url(img/blackandpinkbg.png);
+    background-image: url(img/blackandpinkbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5rem;
+
 }
 
 section {
@@ -70,7 +74,7 @@ strong { font-weight: var(--fw-bold) }
 
 /*nav*/
 .nav {
-  background-color:rgba(171, 169, 174, 0.5);
+  background-color:rgba(171, 169, 174, 0.2);
   color: var(--clr-light);
   text-align: center;
   padding:0;
