@@ -1,3 +1,6 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
 *,
 *::before,
 *::after {
@@ -116,13 +119,17 @@ strong { font-weight: var(--fw-bold) }
 /*Buttons*/
 
 .btn {
+  background: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+  overflow: hidden;
+  position: center;
   display: inline-block;
   padding: .5em 2.5em;
-  background: var(--clr-accent);
+  border-radius: .5em;
   color: var(--clr-dark);
   text-decoration: none;
   cursor: pointer;
   font-size: .8rem;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
@@ -131,4 +138,21 @@ strong { font-weight: var(--fw-bold) }
 
 .btn:hover {
   transform: scale(1.1);
+}
+
+footer {
+  font-size: var(--fs-h3);
+  margin-top: 2em;
+  align-items: center;
+  flex-grow: 1;
+  display: flex;
+  color: inherit;
+  text-decoration: none;
+  justify-content: space-around;
+}
+.footer{
+  display: inline-flex;
+}
+.footer__link{
+  font-weight: var(--fw-bold)
 }
